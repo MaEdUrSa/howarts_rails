@@ -8,7 +8,7 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 
-10.times do |i|
+20.times do |i|
     Character.create(name: Faker::Movies::HarryPotter.character, location: Faker::Movies::HarryPotter.location,
      house: Faker::Movies::HarryPotter.house)
 end
