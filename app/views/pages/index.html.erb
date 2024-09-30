@@ -1,0 +1,35 @@
+<h1 class = "container pb-2 text-center mt-4 py-5">Mostrando Personajes de Harry Potter   </h1>
+
+
+ <div class=" ">
+    <div class="row align-items-start text-center">
+      <div class="col border rounded-4 bg-info">
+          <h4>Name</h4>
+      </div>
+      <div class="col border rounded-4 bg-info">
+        <h4>location</h4>
+      </div>
+      <div class="col border rounded-4 bg-info">
+        <h4> house</h4>
+      </div>
+    </div>
+
+
+  <% @characters.each do |m| %>
+      <div class=" text-left">
+        <div class="row align-items-start ">
+          <div class="col border rounded-4  border-danger" >
+             <%= m.name %>
+          </div>
+          <div class="col border rounded-4  border-danger">
+           
+            <%= m.location %>
+          </div>
+          <div class="col border rounded-4  border-danger">
+           
+            <%= m.house %> 
+          </div>
+        </div>
+      </div>
+  <% end%>
+</div>
